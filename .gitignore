@@ -1,0 +1,6 @@
+__pycache__
+credentials.py
+*.log
+*.png
+!background.png
+!send_btn.png

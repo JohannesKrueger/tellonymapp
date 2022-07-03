@@ -1,0 +1,33 @@
+<Login>
+	ben: benName.text
+	pw: password.text
+	knopf: btn
+
+
+	GridLayout:
+		cols: 1
+		size: root.width, root.height
+		GridLayout:
+			cols: 2
+			Label:
+				text: "Benutzername"
+				font_size: 30
+			TextInput
+				id: benName
+				multiline: False
+				font_size: 30
+			Label:
+				text: "Passwort"
+				font_size: 30
+			TextInput:
+				password: True
+				id: password
+				multiline: False
+				font_size: 30
+			Button:
+				text: "Anmelden"
+				id: btn
+				size_hint: (1., 0.5)
+				font_size: 30
+				on_press:
+					root.anmelden()
